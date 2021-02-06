@@ -1,6 +1,9 @@
 # crypto-tracker
 Crypto tracker created with a Particle Photon
 
+## Introduction
+Crypto tracker is an Photon connected with and API and a LCD to show you the values of different cryptocurrencies.
+
 ## Preview
 
 ![crypto-tracker](https://github.com/mbfassnacht/assets/raw/master/images/crypto-tracker/welcome.png)
