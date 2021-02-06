@@ -14,6 +14,9 @@ Another good reason is that I had always the problem that I could not see all th
 This crypto tracker is connected to the internet and works with the particle.io infraestructure, using the Webhooks functionality as well as the remote console for deploying the code in your Photon.
 The data is fetched from an external free [API](https://www.coingecko.com/en/api#explore-api)
 
+## Prerequisites
+You are a programer and you understand code and how to comunictate with an API. Perfect if you have already some knowledge of how to work with a Photon, Arduino, Spark etc. (but not mandatory ;) ).
+
 ## What do you need
 
 1. [1 Photon](https://store.particle.io/products/photon)
