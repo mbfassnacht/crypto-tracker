@@ -199,7 +199,7 @@ void printValues(const char *event, const char *data) {
 ```
 
 #### All Source Code
-```
+```C
 // This #include statement was automatically added by the Particle IDE.
 #include <JsonParserGeneratorRK.h>
 #include "application.h"
