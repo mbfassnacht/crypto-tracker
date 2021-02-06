@@ -27,6 +27,20 @@ The data is fetched from an external free [API](https://www.coingecko.com/en/api
 ## Build the circuit
 
 ## Add Particle Webhooks
+We will use webhooks to fetch the data from the API and send it back to the Photon.
+For that you can read [here](https://docs.particle.io/tutorials/device-cloud/webhooks/) how Particle Webhooks work and how to setup them.
+
+I will show you directly how I configured them.
+
+### Get Prices
+This webhook is the one that get the prices for the Cryptocurrencies. Here you can configure which currencies you want as well as the list of ids of the cryptocurrencies that you want to track. To get the ids of the currencies you can go [here](https://www.coingecko.com/en/api#explore-api) and take a look to the /coins/list GET function.
+
+![crypto-tracker](https://github.com/mbfassnacht/assets/raw/master/images/crypto-tracker/get_values.png)
+
+### Get Markets
+This webhook is the one that get the market status and turn on the green or the red led on our tracker. I choose to track that based on Bitcoin Price in the last hour. But you can take a look [here](https://www.coingecko.com/en/api#explore-api) in the /simple/price GET function, and configure it as you like.
+
+![crypto-tracker](https://github.com/mbfassnacht/assets/raw/master/images/crypto-tracker/get_markets.png)
 
 ## Write your code
 
@@ -47,6 +61,8 @@ We use LiquidCrystal to make the handling of the LCD 16X2 easier.
 We use JsonParserGeneratorRK to make the parsing of a JSON response easier.
 
 ### Write the code for your app
+Lets write our code in Particle WEB IDE
+
 #### Define PINS and LCD
 Start by defining the PINs of the PHOTON that you are going to use, as well as which PINS will use the LCD 16X2.
 
