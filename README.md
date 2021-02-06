@@ -32,6 +32,12 @@ You are a programer and you understand code and how to comunictate with an API. 
 
 ## Build the circuit
 
+This are the two diagrams that represent the circuit.
+
+![Schema 1](https://github.com/mbfassnacht/assets/raw/master/images/crypto-tracker/CRYPTO-TRACKER.png)
+
+![Schema 2](https://github.com/mbfassnacht/assets/raw/master/images/crypto-tracker/CRYPTO-TRACKER_SCHEMA.png)
+
 ## Add Particle Webhooks
 We will use webhooks to fetch the data from the API and send it back to the Photon.
 For that you can read [here](https://docs.particle.io/tutorials/device-cloud/webhooks/) how Particle Webhooks work and how to setup them.
@@ -41,12 +47,12 @@ I will show you directly how I configured them.
 ### Get Prices
 This webhook is the one that get the prices for the Cryptocurrencies. Here you can configure which currencies you want as well as the list of ids of the cryptocurrencies that you want to track. To get the ids of the currencies you can go [here](https://www.coingecko.com/en/api#explore-api) and take a look to the /coins/list GET function.
 
-![crypto-tracker](https://github.com/mbfassnacht/assets/raw/master/images/crypto-tracker/get_values.png)
+![webhook example 1](https://github.com/mbfassnacht/assets/raw/master/images/crypto-tracker/get_values.png)
 
 ### Get Markets
 This webhook is the one that get the market status and turn on the green or the red led on our tracker. I choose to track that based on Bitcoin Price in the last hour. But you can take a look [here](https://www.coingecko.com/en/api#explore-api) in the /simple/price GET function, and configure it as you like.
 
-![crypto-tracker](https://github.com/mbfassnacht/assets/raw/master/images/crypto-tracker/get_markets.png)
+![webhook example 2](https://github.com/mbfassnacht/assets/raw/master/images/crypto-tracker/get_markets.png)
 
 ## Write your code
 
@@ -380,7 +386,7 @@ void loop() {
 ```
 ## All setup, run it!
 
-![crypto-tracker](https://github.com/mbfassnacht/assets/raw/master/images/crypto-tracker/final.png)
+![ready image](https://github.com/mbfassnacht/assets/raw/master/images/crypto-tracker/final.png)
 
 
 ## Disclaimer
