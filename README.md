@@ -390,4 +390,4 @@ void loop() {
 
 
 ## Disclaimer
-Any data that you see in the crypto-tracker can have delays and can be not 100% accurate. This information should not be a reason for investing.
+All the data that you see in the crypto-tracker can have delays and can be not 100% accurate. This information should not be a reason for investing.
